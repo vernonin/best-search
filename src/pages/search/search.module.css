@@ -1,0 +1,40 @@
+.searchContent {
+	width: 70vw;
+	margin: 20px auto 0;
+}
+
+.searchContentTitle {
+	color: #333;
+	line-height: 40px;
+	font-size: 18px;
+}
+
+.productContent {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 12px;
+}
+
+/* 中等屏幕 */
+@media screen and ((min-width: 400px) and (max-width: 610px)) {
+	.searchContent {
+		width: calc(100vw - 40px);
+		margin: 0 auto;
+	}
+	.productContent {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+
+/* 小屏幕屏幕 */
+@media screen and (max-width: 400px) {
+	.searchContent {
+		width: calc(100vw - 40px);
+		margin: 0 auto;
+	}
+
+	.productContent {
+		grid-template-columns: 1fr;
+	}
+}

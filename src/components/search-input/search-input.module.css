@@ -1,0 +1,28 @@
+.searchInput {
+	height: 32px;
+	display: flex;
+}
+
+.input {
+	flex: 1;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	border: 1px solid #c0c0c0;
+	background-color: transparent;
+}
+
+.button {
+	width: 46px;
+	height: 32px;
+	flex-shrink: 0;
+	cursor: pointer;
+	margin-left: 12px;
+	box-sizing: border-box;
+	border: 1px solid #c0c0c0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

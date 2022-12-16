@@ -1,0 +1,40 @@
+.headerContainer {
+	height: 60px;
+	line-height: 60px;
+	padding: 0 20px;
+	font-size: 18px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #d1d1d1;
+
+	display: flex;
+	align-items: center;
+}
+
+.headerLogo {
+	color: #333;
+	text-decoration: none;
+}
+
+.slot {
+	flex: 1;
+	margin-left: 20px;
+}
+
+@media screen and ((min-width: 400px) and (max-width: 610px)) {
+	.headerLogo {
+		font-size: 16px;
+	}
+	.headerContainer {
+		justify-content: space-between;
+	}
+}
+
+/* 小屏幕屏幕 */
+@media screen and (max-width: 400px) {
+	.headerLogo {
+		display: none;
+	}
+	.headerContainer {
+		justify-content: space-between;
+	}
+}
